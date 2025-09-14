@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* max-with คือ ไม่มากกว่า */
+        /* min-with คือ ไม่น้อยกว่า */
+        /* กำหนดขนาด Brack point smartphone mini tablet ipad */
+        @media screen and (max-width: 768px) {
+            h1 {
+                background-color: #f00909;
+            }
+
+            span {
+                font-size: 5rem;
+                color: #f00909;
+            }
+        }
+
+        /* tablet */
+        @media screen and (min-width: 769px) and (max-with: 1279px) {
+            h1 {
+                background-color: #4d06f1;
+            }
+
+            span {
+                font-size: 5rem;
+                color: #0d09f0;
+            }
+        }
+
+        /* pc notebook */
+        @media screen and (min-width: 1280px) {
+            h1 {
+                background-color: #07f422;
+            }
+
+            span {
+                display: none;
+                color: #07f422;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- responsive Web -->
+    <h1>Hello responsive Web site</h1>
+    <span>SAU</span>
+</body>
+
+</html>
